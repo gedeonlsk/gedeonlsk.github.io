@@ -1,0 +1,44 @@
+/* Nom : Votre Nom Prénom */
+
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 780px;
+    margin: auto;
+    border: 5px solid #3388CC;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 70px; /* Espace entre les sections */
+}
+
+ul {
+    list-style-type: none; /* Supprime les puces */
+    padding-left: 0;
+}
+
+section {
+    margin-bottom: 70px; /* Espace entre les sections */
+}
+
+/* Media queries pour responsivité */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Ajustement de la largeur */
+    }
+}
