@@ -3,19 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Mon CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Importation des icônes -->
+    <style>
+        body {
+            background-color: #1C1C1C; /* Fond sombre */
+            color: #E0E0E0; /* Couleur de texte claire */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #2A2A2A; /* Fond du CV */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-pic {
+            width: 120px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid #C8102E; /* Bordure rouge */
+        }
+        h1 {
+            margin: 0;
+            color: #C8102E; /* Rouge pour le nom */
+        }
+        h2 {
+            color: #FFFFFF; /* Couleur blanche pour les sous-titres */
+            border-bottom: 2px solid #C8102E; /* Ligne rouge sous les titres */
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        section {
+            background: #3A3A3A; /* Fond gris clair pour les sections */
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            position: relative; /* Position relative pour les éléments de style */
+        }
+        section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -20px; /* Positionnement à gauche */
+            height: 100%;
+            width: 10px; /* Largeur de la barre */
+            background: #C8102E; /* Couleur rouge */
+            border-radius: 5px 0 0 5px; /* Bords arrondis */
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+        .contact-info div {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #aaa; /* Couleur grise pour le pied de page */
+        }
+        .icon {
+            margin-right: 5px; /* Espace entre l'icône et le texte */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>LUSUEKAKI Gédéon</h1>
             <img src="GEDEONPHOTO.jpg" alt="Photo de Profil" class="profile-pic">
-            <p>Email : <a href="mailto:gedeonlusuekaki@outlook.fr">gedeonlusuekaki@outlook.fr</a></p>
-            <p>Téléphone : <a href="tel:0123456789">0123456789</a></p>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-envelope icon"></i>
+                    <p><a href="mailto:gedeonlusuekaki@outlook.fr" style="color: #C8102E;">gedeonlusuekaki@outlook.fr</a></p>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <p>Melun (77000)</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt icon"></i>
+                    <p><a href="tel:0782287663" style="color: #C8102E;">07 82 28 76 63</a></p>
+                </div>
+                <div>
+                    <i class="fas fa-birthday-cake icon"></i>
+                    <p>18 ans</p>
+                </div>
+                <div>
+                    <i class="fas fa-flag icon"></i>
+                    <p>Français</p>
+                </div>
+                <div>
+                    <i class="fas fa-car icon"></i>
+                    <p>Permis B</p>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <p>Île-de-France</p>
+                </div>
+            </div>
         </header>
-        
-        <section class="skills">
+
+        <section>
             <h2>Compétences</h2>
             <ul>
                 <li>Développement Web</li>
@@ -23,24 +122,36 @@
                 <li>Analyse de données</li>
             </ul>
         </section>
-        
-        <section class="experience">
+
+        <section>
             <h2>Expériences Professionnelles</h2>
             <ul>
-                <li><strong>Technicien IT</strong> - SCC France - Lieusaint (2024)</li>
-                <li><strong>Stage en entreprise</strong> - Stage de 3ème (2020)</li>
+                <li>
+                    <strong>Technicien IT</strong> - SCC France - Lieusaint
+                    <div class="date">(2024)</div>
+                </li>
+                <li>
+                    <strong>Stage en entreprise</strong> - Stage de 3ème
+                    <div class="date">(2020)</div>
+                </li>
             </ul>
         </section>
-        
-        <section class="education">
+
+        <section>
             <h2>Formation</h2>
             <ul>
-                <li><strong>BTS SIO option SISR</strong> - (depuis 2024)</li>
-                <li><strong>Bac STI2D</strong> - (2021 - 2024)</li>
+                <li>
+                    <strong>BTS SIO option SISR</strong>
+                    <div class="date">(depuis 2024)</div>
+                </li>
+                <li>
+                    <strong>Bac STI2D</strong>
+                    <div class="date">(2021 - 2024)</div>
+                </li>
             </ul>
         </section>
-        
-        <section class="hobbies">
+
+        <section>
             <h2>Loisirs</h2>
             <ul>
                 <li>Football</li>
