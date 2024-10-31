@@ -1,0 +1,88 @@
+/* Reset de styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général du corps */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: #3388CC;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Styles de navigation */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700; /* Couleur dorée au survol */
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles des titres */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #3388CC;
+    margin-top: 20px;
+}
+
+/* Styles des listes */
+ul {
+    list-style-type: none; /* Supprimer les puces */
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee; /* Ligne séparatrice entre les missions */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #3388CC;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #FFD700; /* Couleur dorée au survol */
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9em;
+    color: #666;
+}
