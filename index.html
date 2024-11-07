@@ -3,38 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!-- Assurez-vous que style.css est dans le même dossier -->
-    <title>Accueil - Portfolio de Gédéon Lusuekaki</title>
+    <title>Portfolio de Gédéon Lusuekaki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <nav>
-            <a href="Missions/Mission 1/mission1.html">Mission 1</a>
-            <a href="Missions/Mission 2/mission2.html">Mission 2</a>
-            <a href="Missions/Mission 3/mission3.html">Mission 3</a>
-            <a href="Missions/Mission 4/mission4.html">Mission 4</a>
-            <a href="Missions/Mission 5/CV.html">Mission 5</a>
-        </nav>
+    <!-- Section Accueil avec bouton amélioré -->
+    <header class="hero">
+        <h1>Bienvenue, je suis <span class="highlight">Gédéon Lusuekaki</span></h1>
+        <p>Étudiant en BTS SIO | Option SISR</p>
+        <button class="learn-more" onclick="scrollToSection('about')">En savoir plus</button>
     </header>
 
-    <div class="container">
-        <h2>À Propos de Moi</h2>
-        <p>Je suis Gédéon Lusuekaki, étudiant en BTS SIO. Ce site est dédié à mes missions et projets réalisés durant ma formation.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="Missions/missions.html">Missions</a>
+        <a href="TP/tp.html">Travaux Pratiques</a>
+    </nav>
 
+    <!-- Section Missions avec des cartes stylisées et cliquables -->
+    <section id="missions" class="missions">
         <h2>Mes Missions</h2>
-        <p>Voici une liste de mes missions :</p>
-        <ul>
-            <li><a href="Missions/Mission 1/mission1.html">Mission 1 : Description de la mission 1</a></li>
-            <li><a href="Missions/Mission 2/mission2.html">Mission 2 : Création d'un portail d'information</a></li>
-            <li><a href="Missions/Mission 3/mission3.html">Mission 3 : Certification MOOC</a></li>
-            <li><a href="Missions/Mission 4/mission4.html">Mission 4 : Création d'un Eventside</a></li>
-            <li><a href="Missions/Mission 5/CV.html">Mission 5 : CV</a></li>
-        </ul>
-    </div>
+        <div class="mission-cards">
+            <a href="Missions/Mission 1/mission1.html" class="card">
+                <h3>Mission 1</h3>
+                <p>Description de la mission 1</p>
+            </a>
+            <a href="Missions/Mission 5/CV.html" class="card">
+                <h3>Mission 5</h3>
+                <p>Création d'un CV</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section TP avec grille et liens cliquables -->
+    <section id="tp" class="tp">
+        <h2>Travaux Pratiques</h2>
+        <div class="tp-grid">
+            <a href="TP/TP1/tp1.html" class="tp-item">TP 1 : </a>
+            <a href="TP/TP2/tp2.html" class="tp-item">TP 2 : </a>
+            <a href="TP/TP3/tp3.html" class="tp-item">TP 3 : </a>
+            <a href="TP/TP4/tp4.html" class="tp-item">TP 4 : </a>
+            <a href="TP/TP5/tp5.html" class="tp-item">TP 5 : </a>
+            <a href="TP/TP6/tp6.html" class="tp-item">TP 6 : Création d'un portail d'identification </a>
+            <a href="TP/TP facture/facture.html" class="tp-item">TP 7 : Création d'une Facture </a>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Retrouvez-moi sur les réseaux sociaux :</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/g%C3%A9d%C3%A9on-ndombele-l-727951281/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://gedeonlsk.github.io"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
 
     <footer>
         <p>© 2024 Gédéon Lusuekaki - Tous droits réservés</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
