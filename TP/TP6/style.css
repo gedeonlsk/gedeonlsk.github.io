@@ -1,0 +1,74 @@
+/* Style global */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+
+/* Style du container de connexion */
+.login-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Titre */
+h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Label et input */
+label {
+    display: block;
+    margin-top: 1rem;
+    text-align: left;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Boutons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="button"]:first-child {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+button[type="button"]:nth-child(2) {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+/* Message d'erreur */
+#error-message {
+    color: #f44336;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}

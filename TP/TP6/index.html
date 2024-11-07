@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail de Connexion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>IDENTIFICATION</h2>
+        <form id="loginForm">
+            <label for="username">Username :</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Mot de Passe :</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="button-container">
+                <button type="button" onclick="login()">Se connecter</button>
+                <button type="button" onclick="cancel()">Annuler</button>
+            </div>
+
+            <p id="error-message"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
