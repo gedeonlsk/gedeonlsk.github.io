@@ -14,29 +14,65 @@
             <p>Ajoutez vos articles et générez une facture personnalisée.</p>
         </header>
 
+        <!-- Tableau pour entrer les valeurs des 3 articles -->
         <section class="invoice-form">
-            <input type="text" id="article" placeholder="Nom de l'article" class="input-field">
-            <input type="number" id="price" placeholder="Prix unitaire (en €)" class="input-field">
-            <input type="number" id="quantity" placeholder="Quantité" class="input-field">
+            <table class="input-table">
+                <thead>
+                    <tr>
+                        <th>Article 1</th>
+                        <th>Article 2</th>
+                        <th>Article 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" id="article1" placeholder="Nom de l'article" class="input-field">
+                            <input type="number" id="price1" placeholder="Prix unitaire (en €)" class="input-field">
+                            <input type="number" id="quantity1" placeholder="Quantité" class="input-field">
+                        </td>
+                        <td>
+                            <input type="text" id="article2" placeholder="Nom de l'article" class="input-field">
+                            <input type="number" id="price2" placeholder="Prix unitaire (en €)" class="input-field">
+                            <input type="number" id="quantity2" placeholder="Quantité" class="input-field">
+                        </td>
+                        <td>
+                            <input type="text" id="article3" placeholder="Nom de l'article" class="input-field">
+                            <input type="number" id="price3" placeholder="Prix unitaire (en €)" class="input-field">
+                            <input type="number" id="quantity3" placeholder="Quantité" class="input-field">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <button onclick="addItem()" class="btn-add">Ajouter à la facture</button>
         </section>
 
-        <table id="invoice-table" class="invoice-table">
-            <thead>
-                <tr>
-                    <th>Article</th>
-                    <th>Prix Unitaire</th>
-                    <th>Quantité</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
-            <tbody id="invoice-items">
-                <!-- Articles ajoutés ici -->
-            </tbody>
-        </table>
+        <!-- Tableau des articles ajoutés à la facture -->
+        <section>
+            <table id="invoice-table" class="invoice-table">
+                <thead>
+                    <tr>
+                        <th>Article</th>
+                        <th>Prix Unitaire</th>
+                        <th>Quantité</th>
+                        <th>Total</th>
+                        <th>Supprimer</th>
+                    </tr>
+                </thead>
+                <tbody id="invoice-items">
+                    <!-- Articles ajoutés ici -->
+                </tbody>
+            </table>
+        </section>
 
         <div class="total-container">
             <h3>Total de la facture: <span id="total-price">0.00</span> €</h3>
+        </div>
+
+        <!-- Buttons for reset and return -->
+        <div class="buttons">
+            <button onclick="resetForm()" class="btn-reset">Réinitialiser</button>
+            <a href="index.html"><button class="btn-back">Retour à l'accueil</button></a>
         </div>
     </div>
 
