@@ -1,0 +1,97 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+    line-height: 1.6;
+    background-image: url('https://t4.ftcdn.net/jpg/05/27/29/11/240_F_527291139_lGEcYVfryzGkdUSaoTZ10codVhxrvcD0.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 20px;
+}
+
+/* Facturation Module */
+.facturation {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.facturation h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.facturation table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.facturation th, .facturation td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.facturation th {
+    background-color: #c8102e;
+    color: white;
+}
+
+.facturation input[type="text"],
+.facturation input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #e0e0e0;
+}
+
+.facturation input:read-only {
+    background-color: #333;
+    cursor: not-allowed;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.facturation button {
+    background-color: #c8102e;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.facturation button:hover {
+    background-color: #a50e23;
+}
+
+.totals {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.totals span {
+    font-weight: bold;
+    color: #c8102e;
+}

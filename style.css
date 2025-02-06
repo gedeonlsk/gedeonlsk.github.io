@@ -1,4 +1,4 @@
-/* Styles de base */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,28 +7,31 @@
 }
 
 body {
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+    background-image: url('https://st.depositphotos.com/2591003/60129/i/450/depositphotos_601295388-stock-photo-pitch-view-parc-des-princes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Section d'accueil avec un bouton modernisé */
+/* Header Section */
 .hero {
     text-align: center;
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: rgba(0, 0, 0, 0.7);
     padding: 60px;
-    color: white;
+    color: #e0e0e0;
 }
 
 .highlight {
-    color: #ffeb3b;
+    color: #c8102e;
 }
 
-/* Bouton "En savoir plus" amélioré */
 .learn-more {
     padding: 10px 20px;
-    border: 2px solid #ffeb3b;
+    border: 2px solid #c8102e;
     background-color: transparent;
-    color: #ffeb3b;
+    color: #c8102e;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 25px;
@@ -37,31 +40,38 @@ body {
 }
 
 .learn-more:hover {
-    background-color: #ffeb3b;
-    color: #333;
+    background-color: #c8102e;
+    color: #fff;
 }
 
 /* Navigation */
 .navbar {
     display: flex;
     justify-content: center;
-    background: #333;
+    background: rgba(0, 0, 0, 0.8);
     padding: 10px 0;
 }
 
 .navbar a {
-    color: #fff;
+    color: #e0e0e0;
     padding: 10px 20px;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    background: #0072ff;
+    background: #c8102e;
 }
 
-/* Section Missions et cartes stylisées */
+/* Missions Section */
+.missions {
+    padding: 40px 20px;
+    text-align: center;
+    color: #000;
+}
+
 .mission-cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     margin: 20px auto;
@@ -75,8 +85,8 @@ body {
     align-items: center;
     width: 200px;
     height: 180px;
-    background: #0072ff;
-    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    color: #e0e0e0;
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
@@ -87,9 +97,15 @@ body {
 .mission-cards a.card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: #c8102e;
 }
 
-/* Section TP en grille */
+/* Travaux Pratiques (TP) Section */
+.tp {
+    padding: 40px 20px;
+    text-align: center;
+}
+
 .tp-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -100,8 +116,8 @@ body {
 
 .tp-grid a.tp-item {
     padding: 20px;
-    background: #00c6ff;
-    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    color: #e0e0e0;
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
@@ -109,23 +125,11 @@ body {
 }
 
 .tp-grid a.tp-item:hover {
-    background-color: #0072ff;
+    background-color: #c8102e;
     transform: scale(1.05);
 }
 
-/* Section À Propos */
-.about {
-    padding: 40px;
-    text-align: center;
-}
-
-.icons i {
-    font-size: 2em;
-    color: #0072ff;
-    margin: 10px;
-}
-
-/* Section Contact */
+/* Contact Section */
 .contact {
     padding: 40px;
     text-align: center;
@@ -133,18 +137,19 @@ body {
 
 .social-icons a i {
     font-size: 1.5em;
-    color: #333;
+    color: #e0e0e0;
     margin: 10px;
     transition: color 0.3s;
 }
 
 .social-icons a i:hover {
-    color: #0072ff;
+    color: #c8102e;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
-    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    color: #e0e0e0;
 }

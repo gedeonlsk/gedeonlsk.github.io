@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Quizz Auto-formation</h1>
+        <p>Testez vos connaissances avec ce quizz interactif.</p>
+    </header>
+
+    <section class="quiz">
+        <h2>Quizz</h2>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Quel est le résultat de 2 + 2 ?</p>
+                <label><input type="radio" name="q1" value="3"> 3</label>
+                <label><input type="radio" name="q1" value="4"> 4</label>
+                <label><input type="radio" name="q1" value="5"> 5</label>
+            </div>
+
+            <div class="question">
+                <p>2. Quel langage est utilisé pour le style des pages web ?</p>
+                <label><input type="radio" name="q2" value="HTML"> HTML</label>
+                <label><input type="radio" name="q2" value="CSS"> CSS</label>
+                <label><input type="radio" name="q2" value="JavaScript"> JavaScript</label>
+            </div>
+
+            <button type="button" onclick="correctQuiz()">Correction</button>
+            <button type="button" onclick="showAnswers()">Corrigé</button>
+            <button type="reset">Effacer</button>
+        </form>
+        <p id="score"></p>
+    </section>
+
+    <script>
+        const answers = {
+            q1: '4',
+            q2: 'CSS'
+        };
+
+        function correctQuiz() {
+            let score = 0;
+            const form = document.forms["quizForm"];
+            for (let question in answers) {
+                if (form[question].value === answers[question]) {
+                    score++;
+                }
+            }
+            document.getElementById('score').innerText = `Score: ${score} / ${Object.keys(answers).length}`;
+        }
+
+        function showAnswers() {
+            alert("Corrigé:\n1. 4\n2. CSS");
+        }
+    </script>
+</body>
+</html>
